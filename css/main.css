@@ -61,6 +61,10 @@ button {
   min-height: calc(100vh - 38.88px - 54.5px - 63px);
 }
 
+.getHeightContainer {
+  min-height: calc(100vh - 41.88px - 54px - 69px - 6rem);
+}
+
 .top-nav {
   background-color: #313131;
   color: white;
@@ -662,6 +666,45 @@ button {
   right: 18px;
 }
 
+/*start nav taps*/
+.main-nav-tap {
+  margin-bottom: 0 !important;
+  border-radius: 0;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+}
+.main-nav-tap .nav-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.main-nav-tap .nav-item .nav-link {
+  white-space: nowrap !important;
+  border-radius: 0 !important;
+  background-color: #f1f1f1 !important;
+  color: black !important;
+  width: 100% !important;
+}
+.main-nav-tap .nav-item .nav-link.active {
+  color: white !important;
+  background-color: #2ba670 !important;
+}
+
+.main-tab-content {
+  border: 1px solid #ddd;
+  border-top: none;
+  padding: 10px;
+}
+.main-tab-content ul {
+  list-style: inside;
+  margin: 0;
+  padding: 0;
+}
+.main-tab-content ul a {
+  color: #2ba670;
+}
+
+/*end nav taps*/
 .main-select {
   border-radius: 4px;
   padding: 0.2rem;

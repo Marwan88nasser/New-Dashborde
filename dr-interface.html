@@ -1,0 +1,288 @@
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>اضافة مريض</title>
+    <!-- Normalize -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Main Faile Css  -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- start scroll top button -->
+    <div class="up-btn position-fixed rounded-3 text-white">
+      <i class="fa-solid fa-angles-up"></i>
+    </div>
+    <!-- end scroll top button -->
+    <!-- Start Top Nav Bar -->
+    <nav class="top-nav">
+      <div class="container">
+        <a href="#" class="tog-show" data-show=".top-nav .list-item"
+          ><i class="fa-solid fa-bars"></i
+        ></a>
+        <ul class="list-item">
+          <li><a href="./site-settings.html">الأعدادات</a></li>
+          <li><a href="#">الموظفين</a></li>
+          <li><a href="#">الصلاحيات</a></li>
+          <li><a href="#">المدن</a></li>
+          <li>
+            <div class="dropdown-hover item">
+              <a class="d-flex"
+                >التقارير
+                <div class="arrow-icon me-1">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </a>
+              <ul class="listis-item" id="dropdown-lang">
+                <li class="item-drop">
+                  <a href="treasury-account.html">
+                    <p class="text">حساب الخزينة</p>
+                  </a>
+                </li>
+                <li class="item-drop">
+                  <a href="patient-report.html">
+                    <p class="text">تقرير المريض</p>
+                  </a>
+                </li>
+                <li class="item-drop">
+                  <a href="Cli&doc-report.html">
+                    <p class="text">تقرير العيادة و الدكتور</p>
+                  </a>
+                </li>
+                <li class="item-drop">
+                  <a href="Financial-report.html">
+                    <p class="text">تقرير مالي عام</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <div class="dropdown-hover" data-show="dropdown-lang">
+          <div class="icon-drop">
+            <i class="fa-solid fa-user icon"></i>
+          </div>
+          <p class="text">admin</p>
+          <div class="arrow-icon">
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+          <ul class="listis-item" id="dropdown-lang">
+            <li class="item-drop">
+              <a href="#">
+                <p class="text">الدعم الفني</p>
+              </a>
+            </li>
+            <li class="item-drop">
+              <a href="#">
+                <p class="text">تسجيل الخروج</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Top Nav Bar -->
+    <!-- Start Bottom Nav Bar -->
+    <nav class="bottom-nav">
+      <div class="container">
+        <a href="#" class="tog-show" data-show=".bottom-nav .list-item"
+          ><i class="fa-solid fa-bars"></i
+        ></a>
+        <ul class="list-item">
+          <li>
+            <a class="item" href="./index.html">
+              الرئيسية
+              <i class="i-item fa-solid fa-house"></i>
+            </a>
+          </li>
+
+          <li>
+            <a class="item" href="add-patient.html">
+              واجهة الطبيب
+              <i class="i-item fa-solid fa-syringe"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End Bottom Nav Bar -->
+    <!-- start main section -->
+    <section class="main-section py-5">
+      <div class="container">
+        <h4 class="main-heading mb-4">واجهة الطبيب</h4>
+
+        <div class="getHeightContainer bg-white p-3 rounded-2 shadow">
+          <div class="row">
+            <div class="col-lg-3">
+              <p class="mb-1">المرضي:</p>
+              <ul
+                class="nav nav-pills main-nav-tap mb-3"
+                id="pills-tab"
+                role="tablist"
+              >
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-1"
+                    type="button"
+                    role="tab"
+                    aria-selected="true"
+                  >
+                    المتواجدين 1
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-2"
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                  >
+                    مواعيد اليوم 0
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content main-tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-1"
+                  role="tabpanel"
+                >
+                  <ul>
+                    <li><a href=""> حضر أحمد </a></li>
+                  </ul>
+                </div>
+                <div class="tab-pane fade" id="pills-2" role="tabpanel">
+                  لا يوجد مواعيد
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <p class="mb-1">أسم المريض:</p>
+              <ul
+                class="nav nav-pills main-nav-tap mb-3"
+                id="pills-tab"
+                role="tablist"
+              >
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-3"
+                    type="button"
+                    role="tab"
+                    aria-selected="true"
+                  >
+                    التشخيص الحالي
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-4"
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                  >
+                    اصدار فاتورة
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-5"
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                  >
+                    بيانات المريض
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-6"
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                  >
+                    تشخيصات سابقة
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-6"
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                  >
+                    تحويل المريض
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content main-tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-3"
+                  role="tabpanel"
+                >
+                  فضلا أضغط علي أسم المريض
+                </div>
+                <div class="tab-pane fade" id="pills-4" role="tabpanel">
+                  فضلا أضغط علي أسم المريض
+                </div>
+                <div class="tab-pane fade" id="pills-5" role="tabpanel">
+                  فضلا أضغط علي أسم المريض
+                </div>
+                <div class="tab-pane fade" id="pills-6" role="tabpanel">
+                  فضلا أضغط علي أسم المريض
+                </div>
+                <div class="tab-pane fade" id="pills-7" role="tabpanel">
+                  فضلا أضغط علي أسم المريض
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end main section -->
+    <!-- Start Footer -->
+    <div class="footer-bottom py-3">
+      <div class="container">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-between gap-3"
+        >
+          <p>جميع الحقوق محفوظة © لـ 2022</p>
+          <img src="./img/footer/copy.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- ENd Footer -->
+    <!-- Js Files -->
+    <script src="js/add-patinet.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+  </body>
+</html>
