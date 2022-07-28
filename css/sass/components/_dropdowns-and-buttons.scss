@@ -73,7 +73,14 @@
     height: 0%;
   }
 }
-
+.btn-purple {
+  color: white;
+  background-color: $purple;
+  &:hover {
+    background-color: #7d3d99;
+    color: white;
+  }
+}
 //dropdown
 .dropdown-hover {
   position: relative;
