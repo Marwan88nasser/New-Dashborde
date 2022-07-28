@@ -178,10 +178,10 @@
     </nav>
     <!-- End Bottom Nav Bar -->
     <!-- Start Section -->
-    <section class="patinet-report getHeight py-4">
-      <div class="container pt-md-5">
+    <section class="patinet-report main-section pt-5">
+      <div class="container">
         <h4 class="main-heading">كشف حساب فواتير المريض</h4>
-        <div class="treasuryAccount-content mb-4">
+        <div class="treasuryAccount-content">
           <div class="row">
             <div class="col-12 col-md-2">
               <div class="box-info">
@@ -193,6 +193,7 @@
                   class="form-control"
                   name="from"
                   id="duration-from"
+                  placeholder="الفترة من"
                 />
               </div>
             </div>
@@ -206,6 +207,7 @@
                   class="form-control"
                   name="to"
                   id="duration-to"
+                  placeholder="الفترة الي"
                 />
               </div>
             </div>
@@ -214,7 +216,7 @@
                 <label for="pay-way" class="report-name mt-3 mb-2"
                   >طريقة الدفع</label
                 >
-                <select class="form-control pay-way" id="pay-way">
+                <select class="main-select w-100 pay-way" id="pay-way">
                   <option value="3" selected="select">غير محدد</option>
                   <option value="cash">نقدا</option>
                   <option value="card">بطاقة شبكة / فيزا</option>
@@ -226,7 +228,7 @@
                 <label for="duration" class="report-name mt-3 mb-2"
                   >الفترة
                 </label>
-                <select class="form-control duration" id="duration">
+                <select class="main-select w-100 duration" id="duration">
                   <option value="3" selected="select">غير محدد</option>
                   <option value="morning">الفترة الصباحية</option>
                   <option value="evening">الفترة المسائية</option>
@@ -235,10 +237,10 @@
             </div>
             <div class="col-12 col-md-2">
               <div class="box-info">
-                <label for="ؤlinic-type" class="report-name mt-3 mb-2"
+                <label for="Clinic-type" class="report-name mt-3 mb-2"
                   >العيادة
                 </label>
-                <select class="form-control Clinic type" id="Clinic type">
+                <select class="main-select w-100 Clinic-type" id="Clinic-type">
                   <option value="-5" selected="select">غير محدد</option>
                   <option value="1">عيادات اسنان</option>
                 </select>
@@ -249,7 +251,7 @@
                 <label for="the-doctor" class="report-name mt-3 mb-2"
                   >الطبيب</label
                 >
-                <select class="form-control the-doctor" id="the-doctor">
+                <select class="main-select w-100 the-doctor" id="the-doctor">
                   <option value="-5" selected="select">غير محدد</option>
                 </select>
               </div>
@@ -264,6 +266,7 @@
                   name="patient-id"
                   class="form-control patient-id"
                   id="patient-id"
+                  placeholder="الرقم التعريفي"
                 />
               </div>
             </div>
@@ -295,11 +298,11 @@
             </div>
             <div class="col-12 col-lg-3">
               <div
-                class="box-info w-100 h-100 d-flex align-items-end justify-content-center mt-2"
+                class="box-info w-100 h-100 d-flex align-items-end justify-content-center"
               >
                 <button
                   type="submit"
-                  class="btn btn-primary w-100 mt-4 mt-lg-0"
+                  class="sec-btn-gre w-75 mt-4 mt-lg-0"
                 >
                   عرض
                 </button>

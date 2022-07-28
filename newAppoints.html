@@ -177,94 +177,91 @@
     </nav>
     <!-- End Bottom Nav Bar -->
     <!-- start section -->
-    <section class="newAppoints py-3">
+    <section class="newAppoints main-section">
       <div class="container">
-        <div
-          class="newAppoints-content d-flex flex-column align-items-center justify-content-center"
-        >
-          <div class="datespage w-100">
-            <h5 class="title p-3 mb-2">إضافة موعد جديد</h5>
-            <div class="content mt-2">
-              <div class="adddate">
-                <form id="appointments" class="form-appointments">
-                  <div class="form-group">
-                    <label for="patient_id" class="control-label mb-2"
-                      >المريض</label
-                    >
-                    <input
-                      name="patient-search"
-                      value="patient-name"
-                      class="form-control mb-3"
-                    />
-                    <small class="text-danger"
-                      ><i class="fa fa-info fs-6 fw-bolder"></i>
-                      يمكنك البحث بالاسم الأول أو رقم الهوية أو رقم الجوال
-                    </small>
-                  </div>
-                  <div class="form-group mt-2">
-                    <label for="dep-id" class="control-label mb-2"
-                      >العيادة</label
-                    >
-                    <select
-                      name="dep-id"
-                      id="dep-id"
-                      class="w-100 main-select mb-3"
-                    >
-                      <option value="">احتر العيادة</option>
-                      <option value="1">عيادات الأسنان</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="duration" class="mb-2 control-label"
-                      >الفترة</label
-                    >
-                    <select
-                      id="duration"
-                      name="duration"
-                      class="main-select w-100 duration mb-3"
-                    >
-                      <option selected="selected" value="">اختر فترة</option>
-                      <option value="morning">الفترة الصباحية</option>
-                      <option value="evening">الفترة المسائية</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="in-day" class="mb-2 control-label">اليوم</label>
-                    <input
-                      type="date"
-                      placeholder="اليوم"
-                      name="in-day"
-                      value="2022-07-27"
-                      id="in-day"
-                      class="form-control in-day mb-3"
-                    />
-                  </div>
-                  <div class="form-group mb-4">
-                    <label for="appoint-status" class="mb-2 control-label"
-                      >حالة الموعد</label
-                    >
-                    <select
-                      id="appoint-status"
-                      name="appoint-status"
-                      class="main-select w-100"
-                    >
-                      <option selected="selected" value="">حالة الموعد</option>
-                      <option value="1">حضر</option>
-                      <option value="2">في الانتظار</option>
-                      <option value="3">تمت التشخيص</option>
-                      <option value="4">مؤكد</option>
-                      <option value="5">غير مؤكد</option>
-                    </select>
-                  </div>
-                  <div class="btn-holder w-100 text-center">
-                    <input
-                      type="submit"
-                      value="إضافة"
-                      class="btn btn-success w-50"
-                    />
-                  </div>
-                </form>
-              </div>
+        <div class="newAppoints-content">
+          <h5 class="main-heading p-2 mb-2">إضافة موعد جديد</h5>
+          <div class="dates-info w-50 m-auto">
+            <div class="content">
+              <form id="appointments" class="form-appointments">
+                <div class="inp-holder">
+                  <label for="patient-name" class="control-label mb-2"
+                    >اسم المريض</label
+                  >
+                  <input
+                    name="patient-name"
+                    placeholder="اسم المريض"
+                    id=""
+                    class="form-control mb-3"
+                  />
+                  <small class="text-danger"
+                    ><i class="fa fa-info fs-6 fw-bolder"></i>
+                    يمكنك البحث بالاسم الأول أو رقم الهوية أو رقم الجوال
+                  </small>
+                </div>
+                <div class="inp-holder mt-3">
+                  <label for="clinic-name" class="control-label mb-2"
+                    >العيادة</label
+                  >
+                  <select
+                    name="clinic-name"
+                    id=""
+                    class="w-100 main-select mb-3 clinic-name"
+                  >
+                    <option value="">احتر العيادة</option>
+                    <option value="1">عيادات الأسنان</option>
+                  </select>
+                </div>
+                <div class="inp-holder">
+                  <label for="duration" class="mb-2 control-label"
+                    >الفترة</label
+                  >
+                  <select
+                    id="duration"
+                    name="duration"
+                    class="main-select w-100 duration mb-3"
+                  >
+                    <option selected="selected" value="">اختر فترة</option>
+                    <option value="morning">الفترة الصباحية</option>
+                    <option value="evening">الفترة المسائية</option>
+                  </select>
+                </div>
+                <div class="inp-holder">
+                  <label for="in-day" class="mb-2 control-label">اليوم</label>
+                  <input
+                    type="date"
+                    placeholder="اليوم"
+                    name="in-day"
+                    value="2022-07-27"
+                    id="in-day"
+                    class="form-control in-day mb-3"
+                  />
+                </div>
+                <div class="inp-holder mb-4">
+                  <label for="appoint-status" class="mb-2 control-label"
+                    >حالة الموعد</label
+                  >
+                  <select
+                    id="appoint-status"
+                    name="appoint-status"
+                    class="main-select w-100"
+                  >
+                    <option selected="selected" value="">حالة الموعد</option>
+                    <option value="1">حضر</option>
+                    <option value="2">في الانتظار</option>
+                    <option value="3">تمت التشخيص</option>
+                    <option value="4">مؤكد</option>
+                    <option value="5">غير مؤكد</option>
+                  </select>
+                </div>
+                <div class="btn-holder w-100 text-center">
+                  <input
+                    type="submit"
+                    value="إضافة"
+                    class="btn btn-primary w-50"
+                  />
+                </div>
+              </form>
             </div>
           </div>
         </div>
