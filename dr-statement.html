@@ -134,25 +134,35 @@
     <!-- start main section -->
     <section class="main-section py-5">
       <div class="container">
-        <h4 class="main-heading mb-4">المواعيد</h4>
+        <h4 class="main-heading mb-4">كشف حساب فواتير العيادات والدكتور</h4>
 
         <div class="bg-white p-3 rounded-2 shadow">
           <div class="row">
-            <div class="col-12 col-lg-5">
-              <label for="appoint-date" class="mb-2">التاريخ</label>
+            <div class="col-12 col-lg-3">
+              <label for="appoint-date" class="mb-2">من</label>
+              <input type="date" class="form-control" id="appoint-date" />
+            </div>
+            <div class="col-12 col-lg-3">
+              <label for="appoint-date" class="mb-2">الي</label>
               <input type="date" class="form-control" id="appoint-date" />
             </div>
 
-            <div class="col-12 col-lg-5">
-              <label for="duration" class="mb-2">الفترة </label>
+            <div class="col-12 col-lg-3">
+              <label for="duration" class="mb-2">طريقة الدفع </label>
               <select class="main-select w-100 duration" id="duration">
-                <option value="3" selected="select">اختر الفترة</option>
-                <option value="morning">الفترة الصباحية</option>
-                <option value="evening">الفترة المسائية</option>
+                <option value="3" selected="select">عير محدد</option>
               </select>
             </div>
-            <div class="col-12 col-md-6 col-lg-2 d-flex align-items-end">
-              <div class="btn-holder w-100 mt-4 mt-lg-0">
+            <div class="col-12 col-lg-3">
+              <label for="duration" class="mb-2"> الفترة </label>
+              <select class="main-select w-100 duration" id="duration">
+                <option value="3" selected="select">عير محدد</option>
+              </select>
+            </div>
+            <div
+              class="col-12 d-flex w-100 align-items-end justify-content-end mt-5"
+            >
+              <div class="btn-holder mt-4 mt-lg-0">
                 <button class="sec-btn-gre w-100">عرض المواعيد</button>
               </div>
             </div>
