@@ -131,19 +131,14 @@
       font-weight: bold;
       white-space: nowrap;
       padding: 10px;
+      &.sec-th-style {
+        border: 2px solid black !important;
+      }
     }
     td {
       background-color: white;
       font-size: 14px;
       padding: 10px;
-      &.dataTables-empty {
-        cursor: pointer;
-        transition: $transition;
-        background-color: #f3f2fa;
-        &:hover {
-          background-color: #e7e6ed;
-        }
-      }
     }
   }
 }
