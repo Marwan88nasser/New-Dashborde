@@ -23,185 +23,222 @@
   </head>
   <body>
     <!-- start scroll top button -->
-  <div class="up-btn position-fixed rounded-3 text-white">
-    <i class="fa-solid fa-angles-up"></i>
-  </div>
-  <!-- end scroll top button -->
-  <!-- Start Top Nav Bar -->
-  <nav class="top-nav">
-    <div class="container">
-      <a href="#" class="tog-show" data-show=".top-nav .list-item"
-        ><i class="fa-solid fa-bars"></i
-      ></a>
-      <ul class="list-item">
-        <li><a href="./site-settings.html">الأعدادات</a></li>
-        <li><a href="#">الموظفين</a></li>
-        <li>
-          <div class="dropdown-hover item">
-            <div>
-              السندات
-              <i class="i-item fa-solid fa-bars-progress"></i>
+    <div class="up-btn position-fixed rounded-3 text-white">
+      <i class="fa-solid fa-angles-up"></i>
+    </div>
+    <!-- end scroll top button -->
+    <!-- Start Top Nav Bar -->
+    <nav class="top-nav">
+      <div class="container">
+        <a href="#" class="tog-show" data-show=".top-nav .list-item"
+          ><i class="fa-solid fa-bars"></i
+        ></a>
+        <ul class="list-item">
+          <li><a href="./site-settings.html">الأعدادات</a></li>
+          <li><a href="#">الموظفين</a></li>
+          <li>
+            <div class="dropdown-hover item">
+              <div>
+                السندات
+                <i class="i-item fa-solid fa-bars-progress"></i>
+              </div>
+              <div class="arrow-icon me-1">
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <ul class="listis-item" id="dropdown-lang">
+                <li class="item-drop">
+                  <a href="#">
+                    <p class="text">سند صرف</p>
+                  </a>
+                </li>
+                <li class="item-drop">
+                  <a href="#">
+                    <p class="text">سند قبض</p>
+                  </a>
+                </li>
+                <li class="item-drop">
+                  <a href="#">
+                    <p class="text">تقارير السندات</p>
+                  </a>
+                </li>
+              </ul>
             </div>
-            <div class="arrow-icon me-1">
-              <i class="fa-solid fa-angle-down"></i>
+          </li>
+          <li><a href="#">الصلاحيات</a></li>
+          <li><a href="#">المدن</a></li>
+          <li>
+            <div class="dropdown-hover item">
+              <div>
+                التقارير
+                <i class="i-item fa-solid fa-copy"></i>
+              </div>
+              <div class="arrow-icon me-1">
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <ul class="listis-item" id="dropdown-lang">
+                <li class="item-drop">
+                  <a href="treasury-account.html">
+                    <p class="text">حساب الخزينة</p>
+                  </a>
+                </li>
+                <li class="item-drop">
+                  <a href="patient-report.html">
+                    <p class="text">تقرير مريض</p>
+                  </a>
+                </li>
+                <li class="item-drop">
+                  <a href="Cli&doc-report.html">
+                    <p class="text">تقرير العيادة و الدكتور</p>
+                  </a>
+                </li>
+                <li class="item-drop">
+                  <a href="Financial-report.html">
+                    <p class="text">تقرير مالي عام</p>
+                  </a>
+                </li>
+              </ul>
             </div>
-            <ul class="listis-item" id="dropdown-lang">
-              <li class="item-drop">
-                <a href="#">
-                  <p class="text">سند صرف</p>
-                </a>
-              </li>
-              <li class="item-drop">
-                <a href="#">
-                  <p class="text">سند قبض</p>
-                </a>
-              </li>
-              <li class="item-drop">
-                <a href="#">
-                  <p class="text">تقارير السندات</p>
-                </a>
-              </li>
-            </ul>
+          </li>
+        </ul>
+        <div class="dropdown-hover" data-show="dropdown-lang">
+          <div class="icon-drop ms-1">
+            <i class="fa-solid fa-user icon"></i>
           </div>
-        </li>
-        <li><a href="#">الصلاحيات</a></li>
-        <li><a href="#">المدن</a></li>
-        <li>
-          <div class="dropdown-hover item">
-            <div>
-              التقارير
-              <i class="i-item fa-solid fa-copy"></i>
-            </div>
-            <div class="arrow-icon me-1">
-              <i class="fa-solid fa-angle-down"></i>
-            </div>
-            <ul class="listis-item" id="dropdown-lang">
-              <li class="item-drop">
-                <a href="treasury-account.html">
-                  <p class="text">حساب الخزينة</p>
-                </a>
-              </li>
-              <li class="item-drop">
-                <a href="patient-report.html">
-                  <p class="text">تقرير مريض</p>
-                </a>
-              </li>
-              <li class="item-drop">
-                <a href="Cli&doc-report.html">
-                  <p class="text">تقرير العيادة و الدكتور</p>
-                </a>
-              </li>
-              <li class="item-drop">
-                <a href="Financial-report.html">
-                  <p class="text">تقرير مالي عام</p>
-                </a>
-              </li>
-            </ul>
+          <p class="text">admin</p>
+          <div class="arrow-icon me-1">
+            <i class="fa-solid fa-angle-down"></i>
           </div>
-        </li>
-      </ul>
-      <div class="dropdown-hover" data-show="dropdown-lang">
-        <div class="icon-drop ms-1">
-          <i class="fa-solid fa-user icon"></i>
+          <ul class="listis-item" id="dropdown-lang">
+            <li class="item-drop">
+              <a href="#">
+                <p class="text">الدعم الفني</p>
+              </a>
+            </li>
+            <li class="item-drop">
+              <a href="#">
+                <p class="text">تسجيل الخروج</p>
+              </a>
+            </li>
+          </ul>
         </div>
-        <p class="text">admin</p>
-        <div class="arrow-icon me-1">
-          <i class="fa-solid fa-angle-down"></i>
-        </div>
-        <ul class="listis-item" id="dropdown-lang">
-          <li class="item-drop">
-            <a href="#">
-              <p class="text">الدعم الفني</p>
+      </div>
+    </nav>
+    <!-- End Top Nav Bar -->
+    <!-- Start Bottom Nav Bar -->
+    <nav class="bottom-nav">
+      <div class="container">
+        <a href="#" class="tog-show" data-show=".bottom-nav .list-item"
+          ><i class="fa-solid fa-bars"></i
+        ></a>
+        <ul class="list-item">
+          <li>
+            <a class="item" href="./index.html">
+              الرئيسية
+              <i class="i-item fa-solid fa-house"></i>
             </a>
           </li>
-          <li class="item-drop">
-            <a href="#">
-              <p class="text">تسجيل الخروج</p>
+          <li>
+            <a class="item" href="./users.html">
+              العملاء
+              <i class="i-item fa-solid fa-users"></i>
+            </a>
+          </li>
+          <li>
+            <a class="item" href="patients.html">
+              المرضي
+              <i class="i-item fa-solid fa-bed-pulse"></i>
+            </a>
+          </li>
+          <li>
+            <a class="item" href="diagnostics.html">
+              التشخيصات
+              <i class="i-item fa-solid fa-syringe"></i>
+            </a>
+          </li>
+          <li>
+            <a class="item" href="tasdeed.html">
+              تسديد فاتورة
+              <i class="i-item fa-solid fa-money-bill-wave"></i>
+            </a>
+          </li>
+          <li>
+            <a class="item" href="./contracts.html">
+              العقود
+              <i class="i-item fa-solid fa-sheet-plastic"></i>
+            </a>
+          </li>
+          <li>
+            <a class="item" href="appoints.html">
+              المواعيد
+              <i class="i-item fa-solid fa-calendar-days"></i>
+            </a>
+          </li>
+          <li>
+            <a class="item" href="bills.html">
+              الفواتير
+              <i class="i-item fa-solid fa-money-check-dollar"></i>
+            </a>
+          </li>
+          <li>
+            <a class="item" href="add-patient.html">
+              اضافة مريض
+              <i class="i-item fa-solid fa-hospital-user"></i>
+            </a>
+          </li>
+          <li>
+            <a class="item" href="./notice.html">
+              الأشعارات
+              <i class="i-item fa-solid fa-bell"></i>
+              <div class="badge-count">5</div>
             </a>
           </li>
         </ul>
       </div>
-    </div>
-  </nav>
-  <!-- End Top Nav Bar -->
-  <!-- Start Bottom Nav Bar -->
-  <nav class="bottom-nav">
-    <div class="container">
-      <a href="#" class="tog-show" data-show=".bottom-nav .list-item"
-        ><i class="fa-solid fa-bars"></i
-      ></a>
-      <ul class="list-item">
-        <li>
-          <a class="item" href="./index.html">
-            الرئيسية
-            <i class="i-item fa-solid fa-house"></i>
-          </a>
-        </li>
-        <li>
-          <a class="item" href="./users.html">
-            العملاء
-            <i class="i-item fa-solid fa-users"></i>
-          </a>
-        </li>
-        <li>
-          <a class="item" href="patients.html">
-            المرضي
-            <i class="i-item fa-solid fa-bed-pulse"></i>
-          </a>
-        </li>
-        <li>
-          <a class="item" href="diagnostics.html">
-            التشخيصات
-            <i class="i-item fa-solid fa-syringe"></i>
-          </a>
-        </li>
-        <li>
-          <a class="item" href="tasdeed.html">
-            تسديد فاتورة
-            <i class="i-item fa-solid fa-money-bill-wave"></i>
-          </a>
-        </li>
-        <li>
-          <a class="item" href="./contracts.html">
-            العقود
-            <i class="i-item fa-solid fa-sheet-plastic"></i>
-          </a>
-        </li>
-        <li>
-          <a class="item" href="appoints.html">
-            المواعيد
-            <i class="i-item fa-solid fa-calendar-days"></i>
-          </a>
-        </li>
-        <li>
-          <a class="item" href="bills.html">
-            الفواتير
-            <i class="i-item fa-solid fa-money-check-dollar"></i>
-          </a>
-        </li>
-        <li>
-          <a class="item" href="add-patient.html">
-            اضافة مريض
-            <i class="i-item fa-solid fa-hospital-user"></i>
-          </a>
-        </li>
-        <li>
-          <a class="item" href="./notice.html">
-            الأشعارات
-            <i class="i-item fa-solid fa-bell"></i>
-            <div class="badge-count">5</div>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!-- End Bottom Nav Bar -->
+    </nav>
+    <!-- End Bottom Nav Bar -->
     <!-- Start Section -->
     <section class="patinet-report main-section pt-5">
       <div class="container">
         <h4 class="main-heading">كشف حساب فواتير المريض</h4>
         <div class="treasuryAccount-content bg-white p-4 rounded-2 shadow">
           <div class="row">
+            <div class="col-12 col-md-4">
+              <div class="box-info">
+                <label for="patient-id" class="report-name mt-3 mb-2"
+                  >رقم ملف المريض / رقم الهوية</label
+                >
+                <input
+                  type="text"
+                  name="patient-id"
+                  class="form-control patient-id"
+                  id="patient-id"
+                />
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="box-info">
+                <label for="patient-name" class="report-name mt-3 mb-2"
+                  >اسم المريض</label
+                >
+                <input
+                  type="text"
+                  class="patient-name form-control"
+                  id="patient-name"
+                />
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="box-info">
+                <label for="phone-number" class="report-name mt-3 mb-2"
+                  >رقم الجوال</label
+                >
+                <input
+                  type="tel"
+                  class="phone-number form-control"
+                  id="phone-number"
+                />
+              </div>
+            </div>
             <div class="col-12 col-md-2">
               <div class="box-info">
                 <label for="duration-from" class="report-name mt-3 mb-2"
@@ -275,56 +312,12 @@
                 </select>
               </div>
             </div>
-            <div class="col-12 col-md-4 col-lg-3">
-              <div class="box-info">
-                <label for="patient-id" class="report-name mt-3 mb-2"
-                  >رقم ملف المريض او رقم الهوية</label
-                >
-                <input
-                  type="text"
-                  name="patient-id"
-                  class="form-control patient-id"
-                  id="patient-id"
-                  placeholder="الرقم التعريفي"
-                />
-              </div>
-            </div>
-            <div class="col-12 col-md-4 col-lg-3">
-              <div class="box-info">
-                <label for="patient-name" class="report-name mt-3 mb-2"
-                  >اسم المريض</label
-                >
-                <input
-                  type="text"
-                  class="patient-name form-control"
-                  id="patient-name"
-                  disabled
-                />
-              </div>
-            </div>
-            <div class="col-12 col-md-4 col-lg-3">
-              <div class="box-info">
-                <label for="phone-number" class="report-name mt-3 mb-2"
-                  >رقم الجوال</label
-                >
-                <input
-                  type="tel"
-                  class="phone-number form-control"
-                  id="phone-number"
-                  disabled
-                />
-              </div>
-            </div>
-            <div class="col-12 col-lg-3">
+
+            <div class="col-12">
               <div
-                class="box-info w-100 h-100 d-flex align-items-end justify-content-center"
+                class="box-info w-100 h-100 mt-3 d-flex align-items-center justify-content-end"
               >
-                <button
-                  type="submit"
-                  class="sec-btn-gre w-75 mt-4 mt-lg-0"
-                >
-                  عرض
-                </button>
+                <button type="submit" class="sec-btn-gre px-5">عرض</button>
               </div>
             </div>
           </div>
